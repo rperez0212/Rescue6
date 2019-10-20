@@ -12,6 +12,9 @@ public class SensorDataObject {
     float u_acc_x;
     float u_acc_y;
     float u_acc_z;
+    float u_ambient_temp;
+    float u_pressure;
+    float u_relative_humidity;
 
     public float getLight() {
         return u_light;
@@ -45,9 +48,39 @@ public class SensorDataObject {
         this.u_acc_z = accz;
     }
 
+    public float getAmbient_temp() {
+        return u_ambient_temp;
+    }
+
+    public void setAmbient_temp(float ambient_temp) {
+        this.u_ambient_temp = ambient_temp;
+    }
+
+    public void setPressure(float pressure) {
+        this.u_pressure = pressure;
+    }
+
+    public float getPressure() {
+        return u_pressure;
+    }
+
+    public void setRelativeHumidity(float relative_humidity) {
+        this.u_relative_humidity = relative_humidity;
+    }
+
+    public float getRelativeHumidity() {
+        return u_relative_humidity;
+    }
+
     @NonNull
     @Override
     public String toString() {
-        return "Light:"+u_light+", accX:"+u_acc_x+", accY:"+u_acc_y+", accZ:"+u_acc_z;
+        return "Light:"+u_light
+                +", accX:"+u_acc_x
+                +", accY:"+u_acc_y
+                +", accZ:"+u_acc_z
+                +", Ambient Temperature:"+u_ambient_temp
+                +", Pressure:"+u_pressure
+                +", Relative Humidity"+u_relative_humidity;
     }
 }
