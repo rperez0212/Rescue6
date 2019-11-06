@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="16dp"
-    tools:context=".ui.newmisson.NewMissionDialogFragment">
+    android:background="@color/dark_grey"
+    tools:context=".NewMissionDialogFragment">
 
     <Button
         android:id="@+id/start"
@@ -24,6 +25,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/mission_duration"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/objectSB" />
 
@@ -34,6 +36,7 @@
         android:layout_height="wrap_content"
         android:text="@string/findNObjects"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

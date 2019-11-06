@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:background="@android:color/black"
     android:layout_height="match_parent">
 
     <TextView
@@ -17,6 +18,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@android:color/white"
         app:layout_constraintVertical_bias="0.042" />
 
     <TextView
@@ -25,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:textColor="@android:color/white"
         android:layout_marginTop="36dp"
         android:text="WiFi Status"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:textColor="@android:color/white"
         android:layout_marginTop="36dp"
         android:text="Accelerometer"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,6 +52,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="X:2.45\nY:-6.5\nZ:3.5"
+        android:textColor="@android:color/white"
         app:layout_constraintStart_toEndOf="@id/accelerometer"
         app:layout_constraintTop_toBottomOf="@+id/accelerometer" />
 
@@ -58,6 +63,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="36dp"
+        android:textColor="@android:color/white"
         android:text="Light"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/acc_values" />
@@ -70,6 +76,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="36dp"
         android:text="GPS Location"
+        android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/light" />
 
@@ -79,6 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:textColor="@android:color/white"
         android:text="Latitude:23.524523\nLongitude:43.123423"
         app:layout_constraintStart_toEndOf="@id/location"
         app:layout_constraintTop_toBottomOf="@+id/location" />
@@ -90,6 +98,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="36dp"
+        android:textColor="@android:color/white"
         android:text="Ambient Temp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lat_lng" />
@@ -101,6 +110,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="36dp"
+        android:textColor="@android:color/white"
         android:text="Pressure"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ambientTemp" />
@@ -112,6 +122,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="36dp"
+        android:textColor="@android:color/white"
         android:text="Relative Humidity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pressure" />
@@ -125,9 +136,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:background="@color/colorAccent"
         android:text="Start New Mission"
-        android:layout_margin="@dimen/fab_margin" />
+        android:layout_margin="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
